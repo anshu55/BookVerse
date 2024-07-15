@@ -5,6 +5,7 @@ import Logout from "./Logout";
 import { useAuth } from "../context/AuthProvider";
 import Courses from './../courses/Courses';
 import Contact from './Contact';
+import About from "./About";
 
 function Navbar() {
   const [authUser, setAuthUser] = useAuth();
@@ -40,17 +41,17 @@ function Navbar() {
   }, []);
   const navItems = (
     <>
-      <li>
+      <li> 
         <a href="/">Home</a>
       </li>
       <li>
-        <a href="/courses">Courses</a>
+        <a href="/explore">Explore</a>
       </li>
       <li>
         <a href="/contact">Contact</a>
       </li>
       <li>
-        <a>About</a>
+        <a href="/about">About</a>
       </li>
     </>
   );
@@ -93,7 +94,7 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className=" text-2xl font-bold cursor-pointer">bookVerse</a>
+            <a href="/" className=" text-2xl font-bold cursor-pointer">bookVerse</a>
           </div>
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex">

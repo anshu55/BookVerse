@@ -1,12 +1,15 @@
-import mongoose from "mongoose";
+// /backend/model/book.model.js
+import mongoose from 'mongoose';
 
-const bookSchema = mongoose.Schema({
-    name: String,
-    price: Number,
-    category: String,
-    image: String,
-    title: String,
+const bookSchema = new mongoose.Schema({
+  name: String,
+  price: Number,
+  category: String,
+  image: String,
+  title: String,
+  pdfLink: String,
 });
-const Book = mongoose.model("Book", bookSchema);
+
+const Book = mongoose.model('Book', bookSchema);
 
 export default Book;

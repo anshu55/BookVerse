@@ -80,5 +80,3 @@ function Freebook() {
   );
 }
 export default Freebook;
-
-
